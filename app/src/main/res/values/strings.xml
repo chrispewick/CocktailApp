@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CocktailApp</string>
+
+    <string name="categories_header">Select a category to see drinks of that type</string>
+    <string name="drinks_header">Select a drink to see its ingredients, how to make it, and more</string>
+    <string name="subtitle">%1$s, %2$s</string>
+    <string name="ingredients_label">Ingredients:</string>
+    <string name="instructions_label">Instructions:</string>
+    <string name="glass_label">Preferred drinking glass:</string>
 </resources>

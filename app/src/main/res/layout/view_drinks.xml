@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pewick.mcocktailapp.views.DrinksView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/primary_text"
+        android:text="@string/drinks_header"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drinks_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+</com.pewick.mcocktailapp.views.DrinksView>
