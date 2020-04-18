@@ -18,14 +18,6 @@ class DrinkDetailsViewModel @Inject constructor(
 
     var drinkDetails: DrinkDetails? = null
 
-    override fun onAttached() {
-        super.onAttached()
-    }
-
-    override fun onDetached() {
-        super.onDetached()
-    }
-
     fun loadDrinkDetails(drinkId: String? = null) {
         disposables.add(model.loadDrinkDetails(drinkId)
             .subscribeOn(Schedulers.io())

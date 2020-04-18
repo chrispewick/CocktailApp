@@ -18,14 +18,6 @@ class CategoriesViewModel @Inject constructor(
     val categoriesLoaded: Observable<Boolean> get() = categoriesLoadedPublisher
     private val categoriesLoadedPublisher = PublishSubject.create<Boolean>()
 
-    override fun onAttached() {
-        super.onAttached()
-    }
-
-    override fun onDetached() {
-        super.onDetached()
-    }
-
     fun loadCategories() {
         disposables.add(model.loadCategories()
             .subscribeOn(Schedulers.io())

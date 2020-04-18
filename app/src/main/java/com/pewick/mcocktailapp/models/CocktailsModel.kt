@@ -5,8 +5,6 @@ import com.pewick.mcocktailapp.datamodels.Drink
 import com.pewick.mcocktailapp.datamodels.DrinkDetails
 import com.pewick.mcocktailapp.services.CocktailDB
 import io.reactivex.Observable
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
 
 class CocktailsModel(private val cocktailService: CocktailDB) {
 

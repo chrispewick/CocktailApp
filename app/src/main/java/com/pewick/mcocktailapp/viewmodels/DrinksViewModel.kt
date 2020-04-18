@@ -18,14 +18,6 @@ class DrinksViewModel @Inject constructor(
     val drinksLoaded: Observable<Boolean> get() = drinksLoadedPublisher
     private val drinksLoadedPublisher = PublishSubject.create<Boolean>()
 
-    override fun onAttached() {
-        super.onAttached()
-    }
-
-    override fun onDetached() {
-        super.onDetached()
-    }
-
     fun loadDrinks(category: String? = null) {
         disposables.add(model.loadDrinks(category)
             .subscribeOn(Schedulers.io())
